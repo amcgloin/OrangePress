@@ -10,7 +10,7 @@ body {
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
-    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    font-family: Bodoni;
     font-size: 1.25em;
     line-height: 1.5;
     margin: 0 auto;
@@ -24,8 +24,15 @@ body {
     }
   }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
+h1{
+    font-family: Old London;
+    color: #b46940;
+    font-size:3em;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #b46940;
+    font-family: Montserrat;
     font-weight: 600;
     line-height: 1.3;
 }
@@ -72,3 +79,7 @@ img {
     width: 33.33%;
     padding: 5px;
   }
+
+a{
+    color:#b46940;
+}
