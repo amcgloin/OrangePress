@@ -1,0 +1,94 @@
+
+
+
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+.partnerwordmark{
+    max-width: 100%;
+}
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: Bodoni;
+    font-size: .75em;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 70em;
+}
+
+a {
+    color: #b46940;
+}
+
+samp {
+    display: none;
+}
+
+h1{
+    font-family: Old London;
+    color: #b46940;
+    font-size:3em;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    line-height: 1.3;
+    color: #b46940;
+    font-family: Montserrat;
+    padding:5px;
+    background-color:rgba(255,255,255, 0.85);
+    border-left: 10px #b46940 solid;
+    position: absolute;
+    bottom: 6%;
+    left: 6%;
+    right:6%;
+    z-index: 10
+}
+
+div{
+    position: relative;
+    padding-bottom: 100%;
+}
+
+article{
+    float: left;
+    display: inline;
+    width:33%;
+}
+
+.article_photo{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   /* border:2px #05a0c4 solid;*/
+}
+
+.cf:before, .cf:after {
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+@media screen and (min-width: 30em) and (max-width: 50em) {
+    article {
+        width: 50%;
+    }
+}
