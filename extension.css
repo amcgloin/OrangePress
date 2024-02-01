@@ -61,7 +61,7 @@ div{
 article{
     float: left;
     display: inline;
-    width:33%;
+    width:50%;
 }
 
 .article_photo{
@@ -87,16 +87,8 @@ article{
     *zoom: 1;
 }
 
-@media only screen and (device-width: 768px) {
+@media screen and (min-width: 30em) {
     article {
-        width: 50%;
+        width: 33%;
     }
 }
-
-
-
-/*@media screen and (min-width: 30em) and (max-width: 50em) {
-    article {
-        width: 50%;
-    }
-}*/
