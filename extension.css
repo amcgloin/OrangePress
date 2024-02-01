@@ -86,9 +86,9 @@ article{
 .cf {
     *zoom: 1;
 }
-
+/*
 @media screen and (min-width: 30em) {
     article {
         width: 33%;
     }
-}
+}*/
