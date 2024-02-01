@@ -87,8 +87,16 @@ article{
     *zoom: 1;
 }
 
-@media screen and (min-width: 30em) and (max-width: 50em) {
+@media only screen and (device-width: 768px) {
     article {
         width: 50%;
     }
 }
+
+
+
+/*@media screen and (min-width: 30em) and (max-width: 50em) {
+    article {
+        width: 50%;
+    }
+}*/
