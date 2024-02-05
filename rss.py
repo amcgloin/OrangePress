@@ -17,7 +17,7 @@ head="""
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Redlands Orange Press</title>
     <meta name="description" content="A site for you to find events, businesses, gyms, community in Redlands for people moving to or living in Redlands, California.">
-    <link rel="stylesheet" href="extension.css">
+    <link rel="stylesheet" href="http://redlandsorangepress.com/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -38,7 +38,7 @@ head="""
 
 """
 
-article_sections=   """<article>
+article_sections=   """<article class_="articlephototop">
     <div class_="storyphoto">
     <a href="{link_}" target="_top">
       <img class="article_photo" style="background-image:url({photo_});"/>
