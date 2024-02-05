@@ -1,10 +1,8 @@
-
-
-
 html {
     background: #e6e9e9;
     background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
+    font-size:16px;
 }
 
 .partnerwordmark{
@@ -19,7 +17,7 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 800px;
-    padding: 2em 2em 70em;
+    padding: 2rem 2rem 70rem;
 }
 
 a {
@@ -33,12 +31,12 @@ samp {
 h1{
     font-family: Old London;
     color: #b46940;
-    font-size:3em;
+    font-size:4rem;
     text-align: center;
 }
 
 h3 {
-    font-size:1.25em;
+    font-size:1.25rem;
     font-weight: 600;
     line-height: 1.3;
     color: #b46940;
