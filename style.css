@@ -2,6 +2,7 @@ html {
     background: #e6e9e9;
     background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
+    font-size:16px;
 }
 
 .partnerwordmark{
@@ -32,23 +33,23 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: Bodoni;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.5;
     margin: 0 auto;
     max-width: 800px;
-    padding: 2em 2em 4em;
+    padding: 2rem 2rem 4rem;
 }
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
   }
 
 h1{
     font-family: Old London;
     color: #b46940;
-    font-size:3em;
+    font-size:4rem;
     text-align: center;
 }
 
@@ -60,7 +61,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    margin-top: 1.3em;
+    margin-top: 1.3rem;
 }
 
 a {
@@ -81,7 +82,7 @@ img {
     border: 10px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     display: block;
-    margin: 1.3em auto;
+    margin: 1.3rem auto;
     max-width: 95%;
 }
 
