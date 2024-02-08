@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
           python -m pip install --upgrade pip
-          if [ -f extension/requirements.txt ]; then pip install -r extension/requirements.txt; fi
+          if [ -f requirements.txt ]; then pip install -r extension/requirements.txt; fi
     - name: Run the program
       run: |
         python rss.py
