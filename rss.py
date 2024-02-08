@@ -90,7 +90,7 @@ def grab_info_redlands(html):
     page=fetch_page("https://www.communityforwardredlands.com/rss/")
     if not page: 
         return
-    soup=BeautifulSoup(page.content, 'xml')
+    soup=BeautifulSoup(page.content, 'lxml')
     for item in soup.find_all("item"):
         headline,link,photo=find_story_info(item)
         if photo == "no photo":
