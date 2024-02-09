@@ -347,4 +347,98 @@ a{
     }
 }
 
+.aspect-ratio {
+    height: 0;
+    position: relative;
+}
 
+.aspect-ratio--1x1 {
+    padding-bottom: 100%;
+}
+
+.aspect-ratio--object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.cover {
+    background-size: cover !important;
+}
+
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.db {
+    display: block;
+}
+
+.fl {
+    float: left;
+    _display: inline;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover, .dim:focus {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
+}
+
+@media screen and (min-width: 30em) {
+    .w-25-ns {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .w-50-m {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .w-25-l {
+        width: 25%;
+    }
+
+    .w-50-l {
+        width: 50%;
+    }
+}
