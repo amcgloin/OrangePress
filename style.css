@@ -39,18 +39,21 @@ body {
     padding: 2rem 2rem 4rem;
 }
 
-/*-----Hides small profile on larger screens---------*/
-@media only screen and (min-width: 600px){
-    .profilehide{
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     body {
         font-size: 1.75rem;
     }
+    h2{
+        font-size:1.75rem
   }
+    h1{
+    font-family: Old London;
+    font-size:2rem;
+    }
+    .profilehide{
+        display: none;
+    }
+}
 
 h1{
     font-family: Old London;
