@@ -9,6 +9,22 @@ html {
     max-width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.75rem;
+    }
+    h2{
+        font-size:1.75rem
+  }
+    h1{
+    font-family: Old London;
+    font-size:2rem;
+    }
+    .profilehide{
+        display: none;
+    }
+}
+
 body {
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
