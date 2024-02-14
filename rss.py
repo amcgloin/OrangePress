@@ -28,10 +28,10 @@ head="""
 <h1 id="header">Redlands Orange Press</h1>
 <section>
     <section style="width:50%;float:left;display:block;text-align: center;">
-        <a href="https://redlandsorangepress.com" ><h2>Community events</h2></a>
+        <a href="https://redlandsorangepress.com" ><h2>Community</h2></a>
     </section>    
     <section style="width:50%;float:right;display:block;text-align: center;">
-        <a href="https://redlandsorangepress.com/news"><h2 style="text-color:black">Morning news</h2></a>
+        <a href="https://redlandsorangepress.com/news"><h2 style="text-color:black">News</h2></a>
     </section>  
 </section>    
 <section>
@@ -80,6 +80,8 @@ end="""</section>
 def find_story_info(item):
     headline=item.find("title").get_text()
     link=item.find("link").get_text()
+   # print(item.find("link").get_text())
+    #print("####")
     if item.find("media:content"):
         photo=item.find("media:content")['url']
     else:
@@ -91,7 +93,7 @@ def grab_info_redlands(html):
     page=fetch_page("https://www.communityforwardredlands.com/rss/")
     if not page: 
         return
-    soup=BeautifulSoup(page.content,"html.parser")
+    soup=BeautifulSoup(page.content,features="xml")
     for item in soup.find_all("item"):
         headline,link,photo=find_story_info(item)
         if photo == "no photo":
@@ -108,12 +110,9 @@ def grab_info_rdf(html):
     page=fetch_page("https://www.redlandsdailyfacts.com/location/california/los-angeles-county/inland-empire/redlands/feed/")
     if not page: 
         return
-    soup=BeautifulSoup(page.content,"html.parser")
+    soup=BeautifulSoup(page.content,features="xml")
     for item in soup.find_all("item"):
-        print("####")
         headline,link,photo=find_story_info(item)
-        print(headline)
-        print(link)
         if photo == "no photo":
             continue
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
@@ -131,7 +130,7 @@ def find_story_info_calmatters(item):
             if category.get_text()in accepted_categories:
                 skip="Don't skip"
     if skip=="skip":
-        return("headline","link","no photo")
+        return("no headline","no link","no photo")
     headline=item.find("title").get_text()
     link=item.find("link").get_text()
     if item.find("thumbnail"):
@@ -145,11 +144,13 @@ def grab_info_calmatters(html):
     page=fetch_page("https://calmatters.org/feed/?partner-feed=aidan")
     if not page: 
         return
-    soup=BeautifulSoup(page.content,"html.parser")
+    soup=BeautifulSoup(page.content,features="xml")
     for item in soup.find_all("item"):
         headline,link,photo=find_story_info_calmatters(item)
         if photo == "no photo":
             continue
+        print(link)
+        print(headline)
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
         html=html+new_article_section
         count+=1
@@ -157,12 +158,13 @@ def grab_info_calmatters(html):
             return(html)
     return(html)
 
+
 def grab_info_lat(html):
     count=0
     page=fetch_page("https://www.latimes.com/california/rss2.0.xml#nt=0000016c-0bf3-d57d-afed-2fff84fd0000-1col-7030col1")
     if not page: 
         return
-    soup=BeautifulSoup(page.content,"html.parser")
+    soup=BeautifulSoup(page.content,features="xml")
     for item in soup.find_all("item"):
         headline,link,photo=find_story_info(item)
         if photo == "no photo":
