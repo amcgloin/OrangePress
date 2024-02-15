@@ -9,6 +9,11 @@ html {
     max-width: 100%;
 }
 
+@font-face {
+  font-family: OldLondon;
+  src: url(https://redlandsorangepress.com/old-london.alternate.ttf);
+}
+
 @media only screen and (max-width: 600px) {
     body {
         font-size: 1.75rem;
