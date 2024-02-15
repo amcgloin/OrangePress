@@ -42,11 +42,12 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         font-size: 1.6rem;
-        padding: 0rem 0rem 0rem;
+        padding: 0rem .2rem 0ren .2rem;
     }
     h2{
-        font-size:1.75rem
-  }
+        font-size:1.75rem;
+        padding: 0rem 2rem;
+    }
     h1{
     font-size:2rem;
     }
