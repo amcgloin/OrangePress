@@ -7,7 +7,7 @@ html {
 
 @font-face {
   font-family: OldLondon;
-  src: url(https://redlandsorangepress.com/old-london.alternate.ttf);
+  src: url("https://redlandsorangepress.com/old-london.alternate.ttf") format('truetype'),url('https://redlandsorangepress.com/old-london.woff') format('woff');
 }
 
 .partnerwordmark{
