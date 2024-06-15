@@ -7,6 +7,7 @@ def fetch_page(url):
     user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)'
     headers = {'User-Agent': user_agent}
     page = requests.get(url.rstrip(),headers = headers)
+    print(page)
     return page
 
 head="""
