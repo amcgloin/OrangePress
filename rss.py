@@ -91,7 +91,7 @@ def find_story_info(item):
 
 def grab_info_redlands(html):
     count=0
-    page=fetch_page("https://www.communityforwardredlands.com/rss/")
+    page=fetch_page("https://www.communityforwardredlands.com/latest/rss/")
     if not page: 
         return
     soup=BeautifulSoup(page.content,features="xml")
