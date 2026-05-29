@@ -182,8 +182,8 @@ def grab_info_lat(html):
 def grab_info():
     html=head
     html=grab_info_redlands(html)
-    html=html+rdf_interlude
-    html=grab_info_rdf(html)
+  #  html=html+rdf_interlude
+   # html=grab_info_rdf(html)
     html=html+calmatters_interlude
     html=grab_info_calmatters(html)
     html=html+lat_interlude
